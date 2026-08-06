@@ -10,7 +10,7 @@ local Window = Rayfield:CreateWindow({
    ShowText = "Rayfield", -- for mobile users to unhide Rayfield, change if you'd like
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
-   ToggleUIKeybind = "U", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+   ToggleUIKeybind = Enum.KeyCode.LeftAlt, -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from emitting warnings when the script has a version mismatch with the interface.
@@ -37,7 +37,7 @@ local Window = Rayfield:CreateWindow({
       SaveKey = true,
       GrabKeyFromSite = false,
    }
-})
+}
 
 local Tab = Window:CreateTab("Main Tab", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Main Section")
